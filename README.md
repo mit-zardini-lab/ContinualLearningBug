@@ -4,9 +4,18 @@ Thanks @meshal-h for finding the bug!
 
 ## Description
 
-When calling `mcdp-solve --imp --lower 100 --upper 100 continual_forecaster '<10 dimensionless>'`, the output gives a result where the pessimistic estimation is **smaller** than the optimistic estimation.
+When calling
+```
+mcdp-solve --imp --lower 100 --upper 100 continual_forecaster '<10 dimensionless>'
+```
+
+The output gives a result where the pessimistic estimation is **smaller** than the optimistic estimation.
 This can be seen in the file `output/10.yaml`.
-For other queries, like `mcdp-solve --imp --lower 100 --upper 100 continual_forecaster '<50 dimensionless>'`, the result has no issue: pessimistic estimation is **larger** than the optimistic estimation
+For other queries, like
+```
+mcdp-solve --imp --lower 100 --upper 100 continual_forecaster '<50 dimensionless>'
+```
+The result has no issue: pessimistic estimation is **larger** than the optimistic estimation
 
 It seems the optimistic solution in `output/10.yaml` is abnormally large:
 
