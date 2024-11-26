@@ -1,0 +1,11 @@
+title: Query_Forecaster
+description: Query for the forecaster model.
+model: '`continual_forecaster'
+query:
+  query_type: FixFunMinRes
+  min_f:
+    worst_accuracy: 10 dimensionless
+  max_r:
+    cost: inf USD
+  optimize_for:
+  - cost

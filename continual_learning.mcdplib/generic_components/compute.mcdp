@@ -1,0 +1,7 @@
+mcdp {
+  requires cost [USD]
+
+  ops_per_usd = 2 [ops/USD]
+
+  provides flops = required cost * ops_per_usd
+}

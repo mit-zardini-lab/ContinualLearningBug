@@ -1,0 +1,23 @@
+mcdp {
+  #requires time [s]
+  requires cost [USD]
+
+  # Initialize Generic DPs
+  compute_dp = instance `compute
+  deploy_dp = instance `deploy
+  scheduler_dp = instance `scheduler
+
+  # Initialize Algorithm DPs
+  algorithm_dp = instance `algorithm
+  
+  provides worst_accuracy = worst_accuracy provided by deploy_dp
+  required cost >= cost required by compute_dp
+
+  flops required by algorithm_dp <= flops provided by compute_dp
+  baseline_accuracy required by deploy_dp <= accuracy provided by algorithm_dp
+  training_time required by algorithm_dp <= training_time provided by scheduler_dp
+  deploy_time required by scheduler_dp <= deploy_time provided by deploy_dp
+  shift_const required by algorithm_dp <= shift_const provided by deploy_dp
+  cost required by compute_dp <= 1000 [USD]
+
+}

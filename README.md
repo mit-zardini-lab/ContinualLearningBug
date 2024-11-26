@@ -1,1 +1,1 @@
-# ContinualLearningBug
+# ContinualLearning

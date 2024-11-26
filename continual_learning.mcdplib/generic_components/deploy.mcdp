@@ -1,0 +1,8 @@
+mcdp {
+  requires baseline_accuracy [dimensionless]
+  provides worst_accuracy [dimensionless]
+  provides shift_const [dimensionless/s]
+  provides deploy_time [s]
+
+  required baseline_accuracy  >= provided worst_accuracy + provided deploy_time * provided shift_const
+}

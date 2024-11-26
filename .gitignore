@@ -1,0 +1,10 @@
+**/node_modules/
+**/out-mcdp_solve/
+**/out-mcdp_plot/
+**/out-query/
+**/out/
+
+**/package-lock.json
+**/package.json
+
+*.nu

@@ -1,0 +1,92 @@
+optimistic:
+  minimals: frozenset({(Decimal('239.428394783'),)})
+  pretty: ↑{⟨239.428394783 USD⟩}
+  all_solutions:
+  - r: ⟨239.428394783 USD⟩
+    assignment:
+      functionality:
+        worst_accuracy: '90'
+      resources:
+        cost: '239.428394783'
+      sub:
+        scheduler_dp:
+          functionality:
+            training_time: '18.612433335'
+          resources:
+            deploy_time: '74.44973334'
+          sub: {}
+        deploy_dp:
+          functionality:
+            deploy_time: '74.44973334'
+            shift_const: '0.1'
+            worst_accuracy: '90'
+          resources:
+            baseline_accuracy: '97.444973334'
+          sub: {}
+        algorithm_dp:
+          functionality:
+            accuracy: '97.444973334'
+          resources:
+            training_time: '18.612433335'
+            flops: '478.856789565'
+          choice:
+          - ALG_1
+          solution:
+            functionality:
+              accuracy: '97.444973334'
+            resources:
+              training_time: '18.612433335'
+              flops: '478.856789565'
+            sub: {}
+        compute_dp:
+          functionality:
+            flops: '478.856789565'
+          resources:
+            cost: '239.428394783'
+          sub: {}
+pessimistic:
+  minimals: frozenset({(Decimal('318.196581848'),)})
+  pretty: ↑{⟨318.196581848 USD⟩}
+  all_solutions:
+  - r: ⟨318.196581848 USD⟩
+    assignment:
+      functionality:
+        worst_accuracy: '90'
+      resources:
+        cost: '318.196581848'
+      sub:
+        scheduler_dp:
+          functionality:
+            training_time: '15.090716239'
+          resources:
+            deploy_time: '60.362864956'
+          sub: {}
+        deploy_dp:
+          functionality:
+            deploy_time: '60.362864956'
+            shift_const: '0.1'
+            worst_accuracy: '90'
+          resources:
+            baseline_accuracy: '96.036286496'
+          sub: {}
+        algorithm_dp:
+          functionality:
+            accuracy: '96.036286496'
+          resources:
+            training_time: '15.090716239'
+            flops: '636.393163696'
+          choice:
+          - ALG_1
+          solution:
+            functionality:
+              accuracy: '96.036286496'
+            resources:
+              training_time: '15.090716239'
+              flops: '636.393163696'
+            sub: {}
+        compute_dp:
+          functionality:
+            flops: '636.393163696'
+          resources:
+            cost: '318.196581848'
+          sub: {}

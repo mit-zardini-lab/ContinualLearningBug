@@ -1,0 +1,8 @@
+mcdp {
+  requires deploy_time [s]
+
+  # Assumption: (1-training_time_factor) is spent on data gathering
+  training_time_factor = 0.25 [dimensionless]
+
+  provides training_time = required deploy_time * training_time_factor
+}
