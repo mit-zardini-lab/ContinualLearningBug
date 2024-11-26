@@ -1,11 +1,12 @@
 mcdp {
   requires flops [ops]
   requires training_time [s]
+  requires shift_const [dimensionless/s]
   provides accuracy [dimensionless]
 
   acc_per_op = 0.01 [dimensionless/ops/s]
 
   provided accuracy <= min( required flops * required training_time * acc_per_op , 100 [dimensionless])
 
-  requires shift_const = 0.1 [dimensionless/s]
+  required shift_const >= 0.1 [dimensionless/s]
 }

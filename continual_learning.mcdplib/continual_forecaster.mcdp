@@ -1,6 +1,7 @@
 mcdp {
   #requires time [s]
   requires cost [USD]
+  provides worst_accuracy [dimensionless]
 
   # Initialize Generic DPs
   compute_dp = instance `compute
@@ -10,7 +11,7 @@ mcdp {
   # Initialize Algorithm DPs
   algorithm_dp = instance `algorithm
   
-  provides worst_accuracy = worst_accuracy provided by deploy_dp
+  provided worst_accuracy <= worst_accuracy provided by deploy_dp
   required cost >= cost required by compute_dp
 
   flops required by algorithm_dp <= flops provided by compute_dp
