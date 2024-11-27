@@ -29,7 +29,7 @@ The branch `no-equality` has a version that only uses inequalities, but still pr
 
 ### Update by @meshal-h
 
-The image `202409` gives same wrong optimistic estimation, **but** gives seemingly correct internal implementation.
+The image `202409` gives same wrong optimistic estimation, **but** gives seemingly correct detailed implementation.
 The results are added to `output` folder with corresponding file names.
 See the difference in the folllowing screenshot:
 ![image](https://github.com/user-attachments/assets/5cc004aa-8a05-4342-a5b2-a55da971709c)
