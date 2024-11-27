@@ -1,0 +1,10 @@
+optimistic:
+  minimals: frozenset({(Decimal('187.069318474'),)})
+  pretty: ↑{⟨187.069318474⟩} UpperSets(⟨USD⟩)
+  all_solutions:
+  - "\e[38;5;51m⟨\e[0m\e[38;5;136m187.069318474\e[0m USD\e[38;5;51m⟩\e[0m"
+pessimistic:
+  minimals: frozenset({(Decimal('24.463192667'),)})
+  pretty: ↑{⟨24.463192667⟩} UpperSets(⟨USD⟩)
+  all_solutions:
+  - "\e[38;5;51m⟨\e[0m\e[38;5;136m24.463192667\e[0m USD\e[38;5;51m⟩\e[0m"
