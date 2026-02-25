@@ -1,0 +1,7 @@
+a: b
+optimistic:
+  minimals: frozenset({(Decimal('187.069318474'),)})
+  pretty: ↑{⟨187.069318474 USD⟩}
+pessimistic:
+  minimals: frozenset({(Decimal('24.463192667'),)})
+  pretty: ↑{⟨24.463192667 USD⟩}

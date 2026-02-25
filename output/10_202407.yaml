@@ -1,0 +1,96 @@
+optimistic:
+  minimals: frozenset({(Decimal('187.069318474'),)})
+  pretty: ↑{⟨187.069318474 USD⟩}
+  all_solutions:
+  - r: ⟨0 USD⟩
+    assignment:
+      functionality:
+        worst_accuracy: '10'
+      resources:
+        cost: 0 USD
+      sub:
+        deploy_dp:
+          functionality:
+            worst_accuracy: '10'
+            deploy_time: 12797650.563541344 s
+            shift_const: 0.1 dimensionless/s
+          resources:
+            baseline_accuracy: '10.236226975'
+          sub: {}
+        algorithm_dp:
+          functionality:
+            accuracy: '10.236226975'
+          resources:
+            flops: 0 ops
+            training_time: 3199412.640885336 s
+            shift_const: 0.1 dimensionless/s
+          choice:
+          - ALG_1
+          solution:
+            functionality:
+              accuracy: '10.236226975'
+            resources:
+              flops: 0 ops
+              training_time: 3199412.640885336 s
+              shift_const: 0.1 dimensionless/s
+            sub: {}
+        scheduler_dp:
+          functionality:
+            training_time: 3199412.640885336 s
+          resources:
+            deploy_time: 12797650.563541344 s
+          sub: {}
+        compute_dp:
+          functionality:
+            flops: 0 op
+          resources:
+            cost: 0 USD
+          sub: {}
+pessimistic:
+  minimals: frozenset({(Decimal('24.463192667'),)})
+  pretty: ↑{⟨24.463192667 USD⟩}
+  all_solutions:
+  - r: ⟨0.000159971 USD⟩
+    assignment:
+      functionality:
+        worst_accuracy: '10'
+      resources:
+        cost: 0.000159971 USD
+      sub:
+        deploy_dp:
+          functionality:
+            worst_accuracy: '10'
+            deploy_time: 12797641.501035348 s
+            shift_const: 0.1 dimensionless/s
+          resources:
+            baseline_accuracy: '10.236226808'
+          sub: {}
+        algorithm_dp:
+          functionality:
+            accuracy: '10.236226808'
+          resources:
+            flops: 0.000319942 ops
+            training_time: 3199410.375258837 s
+            shift_const: 0.1 dimensionless/s
+          choice:
+          - ALG_1
+          solution:
+            functionality:
+              accuracy: '10.236226808'
+            resources:
+              flops: 0.000319942 ops
+              training_time: 3199410.375258837 s
+              shift_const: 0.1 dimensionless/s
+            sub: {}
+        scheduler_dp:
+          functionality:
+            training_time: 3199410.375258837 s
+          resources:
+            deploy_time: 12797641.501035348 s
+          sub: {}
+        compute_dp:
+          functionality:
+            flops: 0.000319942 op
+          resources:
+            cost: 0.000159971 USD
+          sub: {}
