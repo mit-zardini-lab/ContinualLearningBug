@@ -1,0 +1,96 @@
+optimistic:
+  minimals: frozenset({(Decimal('17.457023283'),)})
+  pretty: ↑{⟨17.457023283 USD⟩}
+  all_solutions:
+  - r: ⟨17.457023283 USD⟩
+    assignment:
+      functionality:
+        worst_accuracy: '10'
+      resources:
+        cost: '216.630782397'
+      sub:
+        algorithm_dp:
+          functionality:
+            accuracy: '91.411391554'
+          resources:
+            training_time: '16.401182318'
+            flops: '433.261564793'
+            shift_const: '0.1'
+          choice:
+          - ALG_1
+          solution:
+            functionality:
+              accuracy: '91.411391554'
+            resources:
+              training_time: '16.401182318'
+              flops: '433.261564793'
+              shift_const: '0.1'
+            sub: {}
+        compute_dp:
+          functionality:
+            flops: '433.261564793'
+          resources:
+            cost: '216.630782397'
+          sub: {}
+        scheduler_dp:
+          functionality:
+            training_time: '16.401182318'
+          resources:
+            deploy_time: '65.604729272'
+          sub: {}
+        deploy_dp:
+          functionality:
+            deploy_time: '65.604729272'
+            shift_const: '0.1'
+            worst_accuracy: '10'
+          resources:
+            baseline_accuracy: '16.560472928'
+          sub: {}
+pessimistic:
+  minimals: frozenset({(Decimal('22.456659974'),)})
+  pretty: ↑{⟨22.456659974 USD⟩}
+  all_solutions:
+  - r: ⟨22.456659974 USD⟩
+    assignment:
+      functionality:
+        worst_accuracy: '10'
+      resources:
+        cost: '79.107938152'
+      sub:
+        algorithm_dp:
+          functionality:
+            accuracy: '91.411369044'
+          resources:
+            training_time: '57.776356697'
+            flops: '158.215876304'
+            shift_const: '0.1'
+          choice:
+          - ALG_1
+          solution:
+            functionality:
+              accuracy: '91.411369044'
+            resources:
+              training_time: '57.776356697'
+              flops: '158.215876304'
+              shift_const: '0.1'
+            sub: {}
+        compute_dp:
+          functionality:
+            flops: '158.215876304'
+          resources:
+            cost: '79.107938152'
+          sub: {}
+        scheduler_dp:
+          functionality:
+            training_time: '57.776356697'
+          resources:
+            deploy_time: '231.105426788'
+          sub: {}
+        deploy_dp:
+          functionality:
+            deploy_time: '231.105426788'
+            shift_const: '0.1'
+            worst_accuracy: '10'
+          resources:
+            baseline_accuracy: '33.110542679'
+          sub: {}
